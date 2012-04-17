@@ -4,9 +4,9 @@ class CreateComments < ActiveRecord::Migration
       t.text :content
       t.string :name
       t.string :email
-      t.boolean :active     
-      t.integer :commentable_id
-      t.string  :commentable_type
+      t.boolean :active           
+      t.integer :imageable_id
+      t.string  :imageable_type
 
       t.timestamps
     end

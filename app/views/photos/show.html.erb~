@@ -17,8 +17,6 @@
   <%= @photo.active ? "Yes" : "No" %>
 </p>
 
-<%= render :partial => "partials/comments_list", :locals => {obj: @photo} %>
-
 <%= render :partial => "partials/add_comments_to_page", :locals => {obj: @photo} %>
 
 

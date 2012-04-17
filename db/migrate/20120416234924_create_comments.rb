@@ -5,7 +5,8 @@ class CreateComments < ActiveRecord::Migration
       t.string :name
       t.string :email
       t.boolean :active           
-      t.references :commentable, :polymorphic => true
+      t.integer :commentable_id
+      t.string  :commentable_type
 
       t.timestamps
     end

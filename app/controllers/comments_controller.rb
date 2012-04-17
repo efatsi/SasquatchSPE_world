@@ -2,11 +2,7 @@ class CommentsController < ApplicationController
   
   def index
     @commentable = find_commentable
-    if !@commentable.nil?
-    	@comments = @commentable.comments
-    else
-    	@comments = Comment.all
-    end
+  	@comments = @commentable.comments
   end
   
   def show

@@ -16,9 +16,7 @@
   <%= @article.active ? "Yes" : "No" %>
 </p>
 
-<%= render :partial => "partials/add_comments_to_page", :locals => {obj: @article} %>
-
-<%= render :partial => "partials/add_comments_to_page", :locals => {obj: @article} %>
+<%= render :partial => "partials/add_comments_to_page", :locals => {obj: @photo} %>
 
 <div class="form-actions">
   <%= link_to 'Back', articles_path, :class => 'btn'  %>

@@ -2,7 +2,7 @@
 
 <p>
   <b>Context:</b>
-  <%= @comment.content %>
+  <%= @comment.context %>
 </p>
 
 <p>
