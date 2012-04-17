@@ -5,7 +5,6 @@ class CreateArticles < ActiveRecord::Migration
       t.text :content
       t.integer :category_id
       t.boolean :active, :default => true
-    	t.references :commentable, :polymorphic => true
 
       t.timestamps
     end
